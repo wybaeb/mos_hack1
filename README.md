@@ -158,7 +158,7 @@ docker build --platform linux/amd64 -t your_image_name .
 
 ### Run the Docker Container
 ```
-docker run -d --name your_container_name -e POSTGRES_DB=moshack -e POSTGRES_USER=dbadmin -e POSTGRES_PASSWORD=kI5sWRui5ztDr2BUlV6UPujJe36lxNGuGC4F6OcDLCy2EZeCMOjq3gfvYTbIifLx -e POSTGRES_HOST=10.0.0.7 -e POSTGRES_PORT=30012 -e TELEGRAM_TOKEN=your_telegram_token -e LLAMA_API_URL=http://127.0.0.1:5001 -e LLAMA_API_ACCESS_TOKEN=your_secure_token your_image_name
+docker run -d --name your_container_name -e POSTGRES_DB=moshack -e POSTGRES_USER=dbadmin -e POSTGRES_PASSWORD=db_pass -e POSTGRES_HOST=10.0.0.7 -e POSTGRES_PORT=30012 -e TELEGRAM_TOKEN=your_telegram_token -e LLAMA_API_URL=http://127.0.0.1:5001 -e LLAMA_API_ACCESS_TOKEN=your_secure_token your_image_name
 ```
 
 ## Database
